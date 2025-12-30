@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -10,8 +9,7 @@ import {
   Menu, 
   X,
   TrendingUp,
-  ExternalLink,
-  MessageSquare
+  ExternalLink
 } from 'lucide-react';
 import { BRAND_INFO, SERVICES, PRICING, PROCESS } from './constants';
 
@@ -128,9 +126,9 @@ const Hero = () => {
             <TrendingUp size={14} className="text-black" />
             Join 100+ Brands & Creators
           </span>
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-10 leading-[1] text-black">
-            Master the <br className="hidden md:block" /> 
-            <span className="text-gray-300">Growth Game.</span>
+          <h1 className="text-6xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-10 leading-[1.1] text-black">
+            Grow your Instagram <br className="hidden md:block" /> 
+            <span className="text-gray-300 font-medium">with Content and AI.</span>
           </h1>
           <p className="text-lg md:text-2xl text-gray-500 max-w-3xl mx-auto mb-14 font-medium leading-relaxed">
             We help ambitious creators and businesses dominate Instagram using content strategy, AI-powered automation, and high-performance design.
@@ -150,7 +148,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Modern Background Graphics */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-50/30 rounded-full blur-[160px] -z-10" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gray-50 rounded-full blur-[100px] -z-10" />
     </section>
@@ -242,7 +239,7 @@ const Results = () => {
             "Working with Hardik was the best decision for my brand. My reach skyrocketed and the content quality is unmatched."
           </p>
           <div className="mt-8 flex items-center justify-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-gray-800" />
+            <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center font-bold text-gray-400 border border-gray-700">M</div>
             <div className="text-left">
               <div className="font-bold">Happy Client</div>
               <div className="text-xs text-gray-500 font-bold uppercase tracking-widest">Fashion Creator</div>
@@ -532,7 +529,7 @@ const Footer = () => {
             <div>
               <h5 className="font-bold text-xs uppercase tracking-[0.2em] text-gray-400 mb-8">Social</h5>
               <ul className="space-y-4 font-bold text-gray-600">
-                <li><a href={BRAND_INFO.instagramUrl} className="hover:text-black transition-colors flex items-center gap-2">Instagram <ExternalLink size={14} /></a></li>
+                <li><a href={BRAND_INFO.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors flex items-center gap-2">Instagram <ExternalLink size={14} /></a></li>
                 <li><a href="#" className="hover:text-black transition-colors">LinkedIn</a></li>
                 <li><a href="#" className="hover:text-black transition-colors">Twitter</a></li>
               </ul>
